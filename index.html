@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <!--[if lte IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
 <head>
@@ -8,28 +8,6 @@
 
 	<!-- Behavioral Meta Data -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-	<!-- Core Meta Data -->
-	<meta name="author" content="Aether-Themes">
-	<meta name="description" content="Maven. Responsive One Page Portflio.">
-	<meta name="keywords" content="maven, responsive, one page, portfolio, parallax, template, html5">
-
-	<!-- Open Graph Meta Data -->
-	<meta property="og:description" content="Maven. Responsive One Page Portflio.">
-	<meta property="og:image" content="http://www.aetherthemes.com/demo/maven/preview_image.png">
-	<meta property="og:site_name" content="Maven">
-	<meta property="og:title" content="Maven">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.aetherthemes.com/demo/maven">
-
-	<!-- Twitter Card Meta Data -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@AetherThemes">
-	<meta name="twitter:creator" content="@AetherThemes">
-	<meta name="twitter:title" content="Maven">
-	<meta name="twitter:description" content="Maven. Responsive One Page Portflio.">
-	<meta name="twitter:image" content="http://www.aetherthemes.com/demo/maven/preview_image.png">
-
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="favicon1.png" type="image/png">
 
@@ -50,18 +28,10 @@
 	<link rel="stylesheet" type="text/css" href="css/loader.css"/>
 	<link rel="stylesheet" type="text/css" href="css/framework.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/card.css"/>
 
 	<!-- Colors -->
 	<link rel="stylesheet" type="text/css" href="css/colors/blue.css" media="screen">
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/red.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/green.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/pink.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/orange.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/gray.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/purple.css" media="screen"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/colors/steel.css" media="screen"> -->
-
 	<!-- RS Slider -->
 	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css"/>
 
@@ -74,19 +44,6 @@
 	<script src="js/modernizr.js"></script>
 </head>
 <body>
-	<!-- Loader -->
-	<div class="loader center dark">
-		<div class="loader-content">
-			<img src="images/logo.png" width="138" height="25" alt="logo"><br>
-			<span class="progress-container"><span class="progress"></span></span>
-		</div>
-		<script type="text/javascript">
-			$(window).load(function(){
-				$('.loader').delay(1000).fadeOut('slow');
-			});
-		</script>
-	</div><!-- END LOADER -->
-
 	<!-- Header -->
 	<header>
 		<!-- Logo -->
@@ -132,338 +89,192 @@
 	<div class="navigation-overlay"></div>
 	<div id="wrap">
 		<!-- Hero -->
-		<section id="section1" class="banner-container dark center nav-trigger">
-			<div class="banner">
-				<!-- Slides -->
-				<ul>
-					<!-- Slide 1 -->
-					<li data-slotamount="4" data-transition="fade" data-thumb="images/slider/thumb1.jpg">
-						<!-- MAIN IMAGE -->
-						<img src="images/slider/slide1-bg.jpg"  alt="slidebg1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-
-						<!-- Layer 1 -->
-						<div class="tp-caption lft ltt rs-parallaxlevel-4"
-							 data-x="center"
-							 data-y="100"
-							 data-speed="1000"
-							 data-start="800"
-							 data-elementdelay="0.1"
-							 data-endelementdelay="0.1">
-							<h2>Hi there!</h2>
-                            <h3>Here's Wen</h3>
-							<span class="separator"></span>
-							<h5 class="no-mobile">design &amp; development.</h5>
-						</div>
-
-						<!-- Layer 2 -->
-						<div class="tp-caption lfb ltb rs-parallaxlevel-3"
-							 data-x="center"
-							 data-y="bottom" data-voffset="150"
-							 data-voffset=""
-							 data-speed="1000"
-							 data-start="1200"
-							 data-elementdelay="0.1"
-							 data-endelementdelay="0.1">
-							<img src="images/slider/slide1-macbook.png" alt="">
-						</div>
-					</li>
-
-					<!-- Slide 2 -->
-					<li data-slotamount="5" data-transition="fade" data-thumb="images/slider/thumb2.jpg">
-						<!-- MAIN IMAGE -->
-						<img src="images/slider/slide2-bg.jpg"  alt="slidebg1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-
-						<!-- Layer 1 -->
-						<div class="tp-caption lft ltt rs-parallaxlevel-4"
-							 data-x="center"
-							 data-y="80"
-							 data-speed="1000"
-							 data-start="800"
-							 data-elementdelay="0.1"
-							 data-endelementdelay="0.1">
-							<h2>Mobile design.</h2>
-							<span class="separator"></span>
-							<h5 class="no-mobile">retina ready &amp; responsive.</h5>
-						</div>
-
-						<!-- Layer 2 -->
-						<div class="tp-caption lfl ltl rs-parallaxlevel-3"
-							 data-x="center"
-							 data-y="bottom" data-voffset="-50"
-							 data-voffset=""
-							 data-speed="1000"
-							 data-start="1200"
-							 data-elementdelay="0.1"
-							 data-endelementdelay="0.1">
-							<img src="images/slider/slide2-ipad.png" alt="">
-						</div>
-
-						<!-- Layer 3 -->
-						<div class="tp-caption lfr ltr rs-parallaxlevel-2"
-							 data-x="right" data-hoffset="-100"
-							 data-y="bottom" data-voffset="-45"
-							 data-voffset=""
-							 data-speed="1000"
-							 data-start="1500"
-							 data-elementdelay="0.1"
-							 data-endelementdelay="0.1">
-							<img src="images/slider/slide2-iphone.png" alt="">
-						</div>
-					</li>
-					
-				</ul><!-- END Slides -->
-			</div>
-		</section><!-- END Hero -->
-
-		<!-- Feature boxes -->
-		<section id="section2" class="container center padded">
-			<!-- Title -->
-			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-					<h4>What I do.</h4>
-					<p class="sub-heading">Kicking interesting ideas start and cooperating with different people to achieve goals.</p>
-				</div>
-			</div>
-
-			<!-- Boxes -->
-			<div class="row">
-				<!-- 1 -->
-				<div class="feature-box col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
-					<i class="icon-medium icon-basic-lightbulb"></i>
-					<span class="separator-small"></span>
-					<h5>CREATIVE THINKING</h5>
-					<p>From integrated advertising campaigns to service design, we approach our projects with strategic and creative thinking.</p>
-				</div>
-				<!-- 2 -->
-				<div class="feature-box col-sm-4 wow fadeInUp" data-wow-delay="0.8s">
-					<i class="icon-medium icon-basic-laptop"></i>
-					<span class="separator-small"></span>
-					<h5>Design</h5>
-					<p>We partner with our clients to create big ideas and translate them into innovative digital experiences.</p>
-				</div>
-				<!-- 3 -->
-				<div class="feature-box col-sm-4 wow fadeInUp" data-wow-delay="1s">
-					<i class="icon-medium icon-basic-keyboard"></i>
-					<span class="separator-small"></span>
-					<h5>INTERACTIVE</h5>
-					<p>From prototyping through front &amp; back end engineering to quality testing, we use the latest technologies.</p>
-				</div>
-			</div>
-
-			<!-- Call to action -->
-			<div class="row">
-				<div class="col-xs-12 wow fadeInUp call-to-action" data-wow-delay="1s">
-					<a href="#section5" class="button">view work</a>
-				</div>
-			</div>
-		</section><!-- END Feature Boxes -->
-
-		<!-- Begin Progress Slider -->
-		<section id="section4" class="center padded black">
-			<!-- Title -->
-			<div><p class="sub-heading wow fadeInRight" data-wow-delay="0.5s">My focus</p></div>
-
-			<!-- Slider -->
-			<div class="royalSlider rsProgress">
-				<!-- Slide 1 -->
-				<div class="rsContent wow fadeInRight" data-wow-delay="0.8s">
-					<!-- Progress Bar -->
-					<span class="progress-bar start"></span>
-
-					<div class="container">
-						<!-- Icon -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 icon">
-								<i class="icon-large icon-basic-book-pencil"></i>
-							</div>
-						</div>
-
-						<!-- Heading -->
-						<div class="row">
-							<div class="col-xs-12">
-								<h3>Visual & UX Design</h3>
-							</div>
-						</div>
-
-						<!-- Text -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-								<p>Focusing on good experience for users and keep a clean, simple and mordern taste visual design.</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Tab Control -->
-					<span class="rsTmb">01</span>
-				</div><!-- END Slide -->
-
-				<!-- Slide 2 -->
-				<div class="rsContent">
-					<!-- Progress Bar -->
-					<span class="progress-bar"></span>
-
-					<div class="container">
-						<!-- Icon -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 icon">
-								<i class="icon-large icon-basic-display"></i>
-							</div>
-						</div>
-
-						<!-- Heading -->
-						<div class="row">
-							<div class="col-xs-12">
-								<h3>Prototyping & User Research</h3>
-							</div>
-						</div>
-
-						<!-- Text -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-								<p>It's my favourate part to build mockups to test usability, and communicate with others to get feedback for UX improvment. </p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Tab Control -->
-					<span class="rsTmb">02</span>
-				</div><!-- END Slide -->
-
-				<!-- Slide 3 -->
-				<div class="rsContent">
-					<!-- Progress Bar -->
-					<span class="progress-bar finish"></span>
-
-					<div class="container">
-						<!-- Icon -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 icon">
-								<i class="icon-large icon-basic-flag1"></i>
-							</div>
-						</div>
-
-						<!-- Heading -->
-						<div class="row">
-							<div class="col-xs-12">
-								<h3>Launch</h3>
-							</div>
-						</div>
-
-						<!-- Text -->
-						<div class="row">
-							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ">
-								<p>After all the lo-fi and hi-fi design and tons of testing it's a big time for me and the whole team to bring everything to real world.</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Tab Control -->
-					<span class="rsTmb">03</span>
-				</div>
-			</div><!-- END Slider -->
-		</section><!-- END Progress Slider -->
-
+		<!-- END Hero -->
 		<!-- Begin Portfolio -->
-		<section id="section5" class="center padded nb">
+		<section id="section5" class="center padded nb"><!--section5 work-->
 			<div class="container">
 				<!-- Title -->
 				<div class="row">
-					<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 wow fadeInUp" data-wow-delay="0.3s">
-						<h4>The work.</h4>
+					<div class="col-xs-12 col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-delay="0.3s">
+						<h4 class="maintitle">Hi, here's Wen!</h4>
+                        <h5>UX+UI Designer for digital products.</h5>
 					</div>
 				</div>
 
 				<!-- Filters -->
 				<div class="row">
 					<ul class="col-xs-12 filters">
-						<li data-filter="*" class="is-checked wow fadeInUp" data-wow-delay="0.5s">All</li>
-						<li data-filter=".interactive" class="wow fadeInUp" data-wow-delay="0.8s">Interactive Design</li>
-						<li data-filter=".motion" class="wow fadeInUp" data-wow-delay="1s">Motion Design</li>
-						<li data-filter=".branding" class="wow fadeInUp" data-wow-delay="1.2s">Branding</li>
+						<li data-filter="*" class="is-checked wow fadeInUp" data-wow-delay="0.5s">Project</li>
+						<li class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://dribbble.com/wwendesign">Dribbble</a></li>
+						<li class="wow fadeInUp" data-wow-delay="1s"><a href="https://www.linkedin.com/pub/wen-wang/8a/56a/9b6">LinkedIn</a></li>
+						<li><a href="aboutme.html" class="aboutme wow fadeInUp" data-wow-delay="1.33s">ABOUT ME</a></li>
 					</ul>
 				</div>
-			</div><!-- END Container -->
+			
      
            <!--Begin thumbnails-->
-			<div class="thumbnails dark">
-				<div class="thumbnail interactive">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single.html">Dashboard testing design</a>
-					</div>
-					<img src="images/portfolio/thumb.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail interactive">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single2.html">Tripschat</a>
-					</div>
-					<img src="images/portfolio/thumb2.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail interactive motion">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single3.html">hp CLC project</a>
-					</div>
-					<img src="images/portfolio/thumb3.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail interactive">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single5.html">Rommy APP design</a>
-					</div>
-					<img src="images/portfolio/thumb4.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail interactive">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single4.html">Easy pay APP & new device design</a>
-					</div>
-					<img src="images/portfolio/thumb5.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail interactive">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single6.html">Moveup Sports APP design</a>
-					</div>
-					<img src="images/portfolio/thumb6.jpg" alt="thumbnail">
-				</div>
-				<div class="thumbnail interactive">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single7.html">myGuide APP design</a>
-					</div>
-					<img src="images/portfolio/thumb7.jpg" alt="thumbnail">
-				</div>
-                <div class="thumbnail motion">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single8.html">Google I/O event motion design</a>
-					</div>
-					<img src="images/portfolio/thumb8.jpg" alt="thumbnail">
-				</div>
-                <div class="thumbnail interactive motion">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single9.html">iScale APP & new device design</a>
-					</div>
-					<img src="images/portfolio/thumb9.jpg" alt="thumbnail">
-				</div>
-                   <div class="thumbnail branding interactive">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single10.html">Dr.Quirkies branding development</a>
-					</div>
-					<img src="images/portfolio/thumb10.jpg" alt="thumbnail">
-				</div>
-                   <div class="thumbnail motion">
-					<div class="overlay"></div>
-					<div class="project-info">
-						<a class="button dark" href="portfolio-single11.html">Designer introduction motion design</a>
-					</div>
-					<img src="images/portfolio/thumb11.jpg" alt="thumbnail">
-				</div>
-			</div><!-- END Thumbnails -->
+	<div class="cardwarp row">
+           <div class="ui card">
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbbypass.png">
+          </div>
+              <div class="content">
+                  <a href="portfolio-new1.html" class="title">
+                      Bypass
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Dashboard & POS system
+                </a>
+              </div>
+            </div><!-- card1 end -->
+            <div class="ui card"><!--card2 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbmocart.png">
+              </div>
+              <div class="content">
+                  <a href="portfolio-new2.html" class="title">
+                      MoCart
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Online Shopping APP
+                </a>
+              </div>
+            </div><!--card2 end -->
+            
+            <div class="ui card"><!--card3 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbcar.png">
+              </div>
+              <div class="content">
+                  <a href="" class="title">
+                      Zipparc
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Real Time Parking APP
+                </a>
+              </div>
+             </div><!--card3 end -->
+             
+             <div class="ui card"><!--card4 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbhp.png">
+              </div>
+              <div class="content">
+                  <a href="#" class="title">
+                      HP & Live Savannah 
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Live Guide Project for HP
+                </a>
+              </div>
+             </div><!--card4 end -->
+             
+              <div class="ui card"><!--card5 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbhpillus.png">
+              </div>                                                                                                                                                                                                                                                                                                            
+              <div class="content">
+                  <a href="#" class="title">
+                      HP & Live Savannah 
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Live Guide Project for HP
+                </a>
+              </div>
+             </div><!--card5 end -->
+             
+              <div class="ui card"><!--card6 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbspot.png">
+              </div>
+              <div class="content">
+                  <a href="#" class="title">
+                      Bypass
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Dashboard & POS system
+                </a>
+              </div>
+             </div><!--card6 end -->
+             
+              <div class="ui card"><!--card7 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbgoogle.png">
+              </div>
+              <div class="content">
+                  <a href="#" class="title">
+                      Bypass
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Dashboard & POS system
+                </a>
+              </div>
+             </div><!--card7 end -->
+             
+              <div class="ui card"><!--card7 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbmotion.png">
+              </div>
+              <div class="content">
+                  <a href="#" class="title">
+                      Motion
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Motion design
+                </a>
+              </div>
+             </div><!--card7 end -->
+             
+              <div class="ui card"><!--card8 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbiscale.png">
+              </div>
+              <div class="content">
+                  <a href="#" class="title">
+                      POS System App
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Levy APP
+                </a>
+              </div>
+             </div><!--card8 end -->
+             
+             <div class="ui card"><!--card9 start-->
+              <div class="image">
+                <img src="images/portfolio/square thumb/thumbroomy1.png">
+              </div>
+              <div class="content">
+                  <a href="#" class="title">
+                      POS System App
+                  </a> 
+              </div>
+              <div class="description content">
+                <a>
+                  Levy APP
+                </a>
+              </div>
+             </div><!--card9 end -->
+             
+              
+			</div><!--cardwrap end-->
 		</section><!-- END Portfolio -->
 
 
@@ -472,7 +283,7 @@
 			<!-- Title -->
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-					<h4>View more</h4>
+					<h5>View more</h5>
 					<p class="sub-heading">on <a href="https://dribbble.com/wwendesign"target="_blank">Dribbble.com</a><a class="link_dribbble"></a></p>
                     <p><a href="mailto:wenwangdesign@gmail.com">wenwangdesign@gmail.com</a></p>
 				</div>
@@ -495,11 +306,11 @@
 
 				<!-- Copyright -->
 				<div class="row">
-					<div class="col-xs-12"><h6>copyright © 2014 WenWang</h6></div>
+					<div class="col-xs-12"><h7 style="color:#9A9A9A">copyright © 2014 WenWang</h7></div>
 				</div>
 			</div><!-- END Container -->
 		</footer><!-- END Footer -->
-
+      </div><!-- END Container -->
 	</div><!-- END Main Wrap -->
 
 
@@ -515,7 +326,7 @@
 	</div><!-- END IE 8 PAGE -->
 
 	<!-- Javascript -->
-	<script src="js/retina.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="js/retina.js" type="text/javascript" charset="utf-8"></script>-->
 	<script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/plugins.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>

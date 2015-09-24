@@ -30,6 +30,9 @@ Author URI: http://www.aetherthemes.com
 
 /* =Common Styles
 -------------------------------------------------------------- */
+#wrap{
+	background-color:#f7f7f7;
+	}
 body { 
 	background: #fff;
 	color: #666666;
@@ -50,6 +53,11 @@ a { text-decoration: none;
 a:hover{
 	color:#ea4c89;  
 }
+
+a.aboutme {
+	color:#666;  
+}
+
 a, video { outline: 0; }
 button:focus { outline: 0; }
 
@@ -67,24 +75,78 @@ a:active, a:visited {
 /* =Typography
 -------------------------------------------------------------- */
 /* Headings */
-h1, h2, h3, h4 {
+h1, h2, h3{
+	font-family: 'Montserrat', sans-serif;
+	margin: 15px 0 15px 0;
+	font-weight: 700;
+    font-style: normal;
+    color: #2E2E2E;
+    text-align: center;
+    line-height: 1;
+    -webkit-user-select: none;
+}
+
+.maintitle{
+	font-weight: 700;
+	font-family: 'jubilat','futura-pt',Georgia,serif;
+    font-style: normal;
+    font-size: 70px;
+    color: #2E2E2E;
+    text-align: center;
+    line-height: 1;
+    margin: 0 0 50px;
+    -webkit-user-select: none;
+	}
+h4 {
+	font-weight: 700;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 70px;
+    color: #2E2E2E;
+    text-align: center;
+    line-height: 1;
+    margin: 0 0 50px;
+    -webkit-user-select: none;
+}
+
+h5{
+	color: #2e2e2e;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+    margin: 0 0 55px;
+    -webkit-user-select: none;
+	letter-spacing: -0.05em;
+}
+
+h6 {
+	color: #171a1c;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	margin: 15px 0 15px 0;
+}
+h7{
 	color: #171a1c;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	margin: 15px 0 15px 0;
-}
+	}
 
-h5, h6 {
-	color: #171a1c;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	margin: 15px 0 15px 0;
-}
+.post-title h5{
+	text-align: left;
+	margin-left:50px;
+	}
+
 
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 { color: #fff; }
 .black h1, .black h2, .black h3, .black h4, .black h5, .black h6 { color: #fff; }
 h1, h2, h3, h4 { letter-spacing: -0.05em; }
-h5, h6 { text-transform: uppercase; letter-spacing: 0.2em }
+h6 { text-transform: uppercase; letter-spacing: 0.2em }
 h1 { line-height: 0.9em; }
 h2, h3, h4 { line-height: 0.9em; }
 h5, h6 { line-height: 1.2em; }
@@ -92,15 +154,16 @@ h5, h6 { line-height: 1.2em; }
 h1 { font-size: 55px; }
 h2 { font-size: 35px; }
 h3 { font-size: 80px; }
-h4 { font-size: 30px; }
-h5 { font-size: 10px; }
-h6 { font-size: 9px; }
+h4 { font-size: 70px; }
+h5 { font-size: 40px; }
+h6 { font-size: 20px; }
+h7 { font-size: 7px; }
 
 /* Responsive */
 @media (min-width: 768px) {
 	h1 { font-size: 100px; }
 	h2 { font-size: 80px; }
-	h4 { font-size: 40px; }
+	h4 { font-size: 70px; }
 }
 @media (min-width: 992px) {
 }
@@ -108,11 +171,12 @@ h6 { font-size: 9px; }
 @media (min-width: 1200px) {
 	h1, h2, h3, h4, h5, h6 { margin: 20px 0 20px 0; }
 	h1 { font-size: 150px; }
-	h2 { font-size: 100px; }
-	h3 { font-size: 80px; }
-	h4 { font-size: 40px; }
-	h5 { font-size: 12px; }
-	h6 { font-size: 9px; }
+	h2 { font-size: 80px; }
+	h3 { font-size: 70px; }
+	h4 { font-size: 60px; }
+	h5 { font-size: 40px; }
+	h6 { font-size: 20px; }
+	h7 { font-size: 9px; }
 }
 
 /* Common */
@@ -140,13 +204,14 @@ p.sub-heading { font-size: 20px; }
 
 @media (min-width: 1200px) {
 	p {
-		font-size: 18px;
-		margin: 20px 0 20px 0;	
+		font-size: 17px;
+		margin: 20px 0 20px 20px;
+		line-height: 1.5em;	
 	}
 	p.sub-heading { font-size: 25px; }
 }
 
-
+.textwidget p{margin: 20px 0 20px 0;}
 /* =Header
 -------------------------------------------------------------- */
 header {
@@ -176,7 +241,7 @@ header {
 }
 
 .header-inner.scrolled {
-	background: rgba(0, 0, 0, .8);
+	background: rgba(0, 0, 0, 0);
 	-webkit-transition: background 1s ease-out;
 	   -moz-transition: background 1s ease-out;
 		-ms-transition: background 1s ease-out;
@@ -232,7 +297,7 @@ header {
 	display: block;
 	width: 25px;
 	height: 2px;
-	background: #fff;
+	background:#9E9E9E;
 	margin-bottom: 5px;
 	-webkit-transition: -webkit-transform 0.2s;
 	   -moz-transition:    -moz-transform 0.2s;
@@ -1078,6 +1143,7 @@ a.button.dark:active:before, a.button.dark:hover:before {
 
 .filters {
 	display: none;
+	margin-bottom:35px;
 }
 
 .filters li {
@@ -1246,7 +1312,7 @@ margin-left: .2em;
 /* =Footer
 -------------------------------------------------------------- */
 footer {
-	padding: 50px 0px;
+	padding: 45px 0px;
 }
 
 footer .social li {
@@ -1539,7 +1605,8 @@ footer .social a:hover {
 }
 
 .post-body a { 
-	color: #171a1c;
+	color: #1F1F1F;
+	font-weight:600;
 	-webkit-transition: all 0.2s ease;
 	   -moz-transition: all 0.2s ease;
 		-ms-transition: all 0.2s ease;
@@ -1548,7 +1615,7 @@ footer .social a:hover {
 }
 
 .post-body a:hover { 
-	color: #aaaaaa;
+	color: #ea4c89;
 }
 
 .post-media { position: relative; margin-bottom: 20px; }
@@ -1561,19 +1628,18 @@ footer .social a:hover {
 
 .post .date {
 	position: absolute;
-	text-align: center;
-	width: 40px;
+	text-align: left;
+	width: 80px;
 	padding-bottom: 10px;
-	top: 0;
 	left: 0;
 	font-family: 'Montserrat' sans-serif;
 	text-transform: uppercase;
 	font-size: 1em;
 	line-height: 0.8em;
-	border-bottom: 1px solid #e9e9e9;
+	/*border-bottom: 1px solid #e9e9e9;*/
 }
 
-.post .date small { font-size: 0.5833333333333333em; }
+.post .date small { font-size: 0.5233333333333333em; }
 
 .post-title a { 
 	color: #171a1c;
@@ -1714,7 +1780,7 @@ footer .social a:hover {
 	margin-right: 5px;
 }
 
-blockquote {
+/*blockquote {
 	width: 100%;
 	background: #f9f9f9;
 	padding: 15px 0px 15px 30px;
@@ -1735,15 +1801,15 @@ code {
 	font: 12px "Andale Mono",Courier,"Courier New",monospace;
 	margin-bottom: 20px;
 }
+*/
 
 @media (min-width: 768px) {
-	.post { margin-bottom: 35px; padding-bottom: 20px; }
-	.post .date { font-size: 1.2em; }
+	.post .date { font-size: 1.02em; width:50px;}
 	.widget { margin-bottom: 35px; }
 }
 
 @media (min-width: 1200px) {
-	.post .date { font-size: 1.6em; }
+	.post .date { font-size: 1.6em; width:80px;}
 	.post { padding-left: 70px; padding-bottom: 30px; margin-bottom: 50px; }
 	.widget { margin-bottom: 50px; }
 }
